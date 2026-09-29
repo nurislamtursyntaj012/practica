@@ -1,0 +1,10 @@
+stages
+ -test
+
+run_script:
+stage: test
+image: python:3.9-slim
+script:
+-echo "CI/CD процеси басталды..."
+-python3 main.ru
+-echo "Тест сатти аякталды"
